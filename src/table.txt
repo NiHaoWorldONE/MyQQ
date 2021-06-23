@@ -1,0 +1,14 @@
+create table account
+(
+	qqCode int primary KEY auto_increment,
+
+	nickname varchar(30) not null,
+	password varchar(30) not null,
+	age int not null,
+	sex int not null,
+	remark varchar(100),
+	ipAddr varchar(20),
+	port int check(port >= 0 and port <= 65535),
+	onlinestatus varchar(4)
+
+)
