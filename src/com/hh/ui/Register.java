@@ -151,22 +151,22 @@ public class Register extends JFrame {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
-    //监听方法(不懂语法)
+    //监听方法
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == btnSave) {
             if ("".equals(txtNickname.getText().trim())) {//判断昵称是否为空
-                JOptionPane.showMessageDialog(this, "请输入昵称");//不懂
+                JOptionPane.showMessageDialog(this, "请输入昵称");
                 return;
 
             }
             if ("".equals(String.valueOf(txtPassword.getPassword()).trim())) {//判断密码是否为空
-                JOptionPane.showMessageDialog(this, "请输入密码");//不懂
+                JOptionPane.showMessageDialog(this, "请输入密码");
                 return;
 
             }
             if (!String.valueOf(txtPassword.getPassword()).trim().equals
                     (String.valueOf(txtConfirm.getPassword()).trim())) {//判断两次密码是否相等
-                JOptionPane.showMessageDialog(this, "登录密码与确认密码不一致");//不懂
+                JOptionPane.showMessageDialog(this, "登录密码与确认密码不一致");
                 return;
 
             }
