@@ -83,7 +83,7 @@ public class Main extends JFrame implements ActionListener, MouseListener, Windo
         add(bgImg);
 
         //设置TabbedPane为透明背景
-        UIManager.put("TabbedPane.contentOpaque", false);//不懂
+        UIManager.put("TabbedPane.contentOpaque", false);
         tabPanel = new JTabbedPane();
         tabPanel.setOpaque(false);
         //传入好友信息
