@@ -39,7 +39,7 @@ public class BaseDAO {
                     isExist=true;
                 }
             }
-            pstmt.close();//不懂
+            pstmt.close();
         }catch(Exception e){
             e.printStackTrace();
         }
@@ -63,13 +63,13 @@ public class BaseDAO {
                 Random rand = new Random();
                 port = rand.nextInt(64000)+1000;//生成四位qq号码
                 pstmt.setString(1, Cmd.STATUS[1]);
-                pstmt.setInt(2, port);//不懂
+                pstmt.setInt(2, port);
                 ResultSet rs = pstmt.executeQuery();
                 if(!rs.next()){
                     isExist=true;
                 }
             }
-            pstmt.close();//不懂
+            pstmt.close();
         }catch(Exception e){
             e.printStackTrace();
         }
@@ -77,7 +77,7 @@ public class BaseDAO {
 
     }
     //保存注册用户信息
-    public AccountVo saveAccount (AccountVo account){//不懂
+    public AccountVo saveAccount (AccountVo account){
         //获取qq号码
         int qqCode = getQQCode();
         account.setQqCode(qqCode);
